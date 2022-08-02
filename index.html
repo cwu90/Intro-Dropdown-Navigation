@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="images/logo.svg" alt="snap-logo" class="logo" />
+      </div>
+      <button class="mobile-nav-toggle" aria-expanded="false"></button>
+
+      <nav>
+        <ul class="primary-navigation" data-visible="false">
+          <ul class="wrapper-one">
+            <li>
+              <a href="#" class="drop-link features">Features</a>
+              <div class="dropdown-box-one" data-visible="false">
+                <ul class="dropdown-content-one">
+                  <li><a href="#" class="nav-link">Todo List</a></li>
+                  <li><a href="#" class="nav-link">Calendar</a></li>
+                  <li><a href="#" class="nav-link">Reminders</a></li>
+                  <li><a href="#" class="nav-link">Planning</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="drop-link company">Company</a>
+              <div class="dropdown-box-two" data-visible="false">
+                <ul class="dropdown-content-two">
+                  <li><a href="#" class="nav-link">History</a></li>
+                  <li><a href="#" class="nav-link">Our Team</a></li>
+                  <li><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="#" class="nav-link">Careers</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+          </ul>
+          <ul class="wrapper-two">
+            <li><a href="#" class="nav-link">Login</a></li>
+            <li><a href="#" class="nav-link">Register</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left">
+        <h1>Make <span>remote work</span></h1>
+
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="learn"> Learn more</a>
+
+        <div class="logos-box">
+          <img src="images/client-databiz.svg" alt="client-databiz-logo" />
+          <img
+            src="images/client-audiophile.svg"
+            alt="client-audiophile-logo"
+          />
+          <img src="images/client-meet.svg" alt="client-meet-logo" />
+          <img src="images/client-maker.svg" alt="client-maker-logo" />
+        </div>
+      </div>
+
+      <div class="right"></div>
+    </main>
+  </body>
+</html>
